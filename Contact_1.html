@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="style.css">
+  <title>Gharbi Mohamed - CV</title>
+</head>
+<body>
+  <header>
+    <h1>Mohamed Gharbi</h1>
+      <nav>
+       <ul>
+            <li><a href="Acueille.html">Acueille</a></li>
+            <li><a href="Formation.html">Education</a></li>
+            <li><a href="Vie_1.html">Vie Associative</a></li>
+            <li><a href="Contact_1.html">Contact</a></li>
+            <li><a href="quiz.html">Quiz</a></li>
+       </ul>
+      </nav>
+  </header>
+
+  <section id="contact">
+    <div class="content">
+      <h2>Contact Information</h2>
+      <div class="contact-info">
+        <p><strong>Phone:</strong> <img class="logo" src="images/Phone.jpeg" alt="Phone Icon"> 99111734</p>
+        <p><strong>Email:</strong><img class="logo" src="images/Gmail.jpeg" alt="Gmail Logo"> Sielgharbi@gmail.com</p>
+        <p><strong>Facebook:</strong> <a href="https://www.facebook.com/med.gharbi.58367/" target="_blank"><img class="logo" src="images/facebook.png" alt="Facebook Logo"></a></p>
+        <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/mohamed-gharbi-86306b2a4/" target="_blank"><img class="logo" src="images/LinkdIn.png" alt="LinkedIn Logo"></a></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Add more sections as needed -->
+
+  <script>
+    // Add basic JavaScript features here for enhanced dynamism
+    // For example, smooth scrolling to sections
+    document.querySelectorAll('nav a').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+</body>
+</html>

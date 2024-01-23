@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="style.css">
+  <title>Gharbi Mohamed - CV</title>
+</head>
+<body>
+  <header>
+    <h1>Mohamed Gharbi</h1>
+    <nav>
+        <ul>
+            <li><a href="Acueille.html">Acueille</a></li>
+            <li><a href="Formation.html">Education</a></li>
+            <li><a href="Vie_1.html">Vie Associative</a></li>
+            <li><a href="Contact_1.html">Contact</a></li>
+            <li><a href="quiz.html">Quiz</a></li>
+          </ul>
+    </nav>
+  </header>
+
+  <section id="ieee">
+    <div class="content">
+      <h2>IEEE - Institute of Electrical and Electronics Engineers</h2>
+      <p>
+        The IEEE is the world's largest technical professional organization dedicated to advancing technology for the benefit of humanity.
+        As a member of the IEEE, I have been actively involved in various events and initiatives.
+      </p>
+      <div class="logo-container">
+        <img class="logo" src="images/IIT Logo.png" alt="IIT Logo">
+        <img class="logo" src="images/IEEE.png" alt="IEEE Logo">
+      </div>
+    </div>
+  </section>
+
+  <section id="tsyp">
+    <div class="content">
+      <h2>TSYP Event</h2>
+      <p>
+        I had the privilege of participating in the TSYP (Technical and Scientific Young Professionals) event organized by IEEE.
+        This event provided valuable insights into the latest advancements in technology and created opportunities for networking with professionals in the field.
+      </p>
+      <div class="logo-container">
+        <img class="logo" src="images/TSYP.jpeg" alt="TSYP Logo">
+      </div>
+      <video width="400" controls>
+        <source src="images/TSYP-vid.MP4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </section>
+
+  <section id="ras">
+    <div class="content">
+      <h2>IEEE RAS Chapter - Vice Chair</h2>
+      <p>
+        IEEE RAS (Robotics and Automation Society) is a society of IEEE that promotes the advancement of the theory and practice of robotics and automation engineering.
+        Serving as the Vice Chair of the IEEE RAS Chapter, I actively contribute to organizing events, workshops, and activities related to robotics and automation.
+        This role allows me to network with experts in the field and stay updated on the latest trends and innovations.
+      </p>
+      <div class="logo-container">
+        <img class="logo" src="images/RAS.jpeg" alt="RAS Chapter Logo">
+      </div>
+    </div>
+  </section>
+  <script>
+    document.querySelectorAll('nav a').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+</body>
+</html>
